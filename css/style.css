@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;    /*10pixels*/
+    overflow-x: hidden;
+
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #91a4eb;
+}
+
+
+
+
+section{
+    padding: 5rem 10%;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.btn{
+    display: inline-block;
+    background-color: #586fbe;
+    border: 1px solid white;
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: black;
+}
+
+.heading-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.heading{
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/* header CSS Starts */
+.header{
+    position: sticky;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background-color: rgb(227, 230, 237);
+    display:flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: black;
+}
+
+.header .navbar a:hover{
+    color: #91a4eb;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+
+/* header CSS closed */
+
+
+/* homePage CSS starts here */
+
+.home{
+    padding: 0;
+}
+
+.home .slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 60rem;
+}
+
+.home .slide .content{
+    width: 85rem;
+    display: none;
+}
+
+.home .swiper-slide-active .content{
+    display: inline-block;
+}
+
+.home .slide .content span{
+    display: block;
+    font-size: 2.2rem;
+    color: rgb(255, 255, 255);
+    padding-bottom: 1rem;
+    animation:fadeIn .4s linear backwards .2s;
+}
+
+.home .slide .content h3{
+    font-size: 6vw;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+    padding: 1rem 0;
+    animation:fadeIn .4s linear backwards .4s;
+}
+
+.home .slide .content .btn{
+    animation:fadeIn .4s linear backwards .6s;
+}
+
+/* homePage CSS end here */
+
+
+/* services CSS starts */
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+}
+
+.services .box-container .box{
+    padding: 2.5rem 2rem;
+    text-align: center;
+    background: #91a4eb;
+    cursor: pointer;
+}
+
+.services .box-container .box:hover{
+    background: rgb(38, 66, 208);
+}
+
+.services .box-container .box img{
+    height: 8rem;
+}
+.services .box-container .box h2{
+    color: black;
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+/* services CSS ends here */
+
+
+/* home-about css starts here */
+.home-about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-about .image{
+    flex: 1 1 41rem;
+}
+
+.home-about .image img{
+    width: 100%;
+}
+
+.home-about .content{
+    flex:1 1 41rem;
+    padding:3rem;
+    background: #eee;
+}
+
+.home-about .content h3{
+    font-size: 3rem;
+    color: black;
+}
+
+.home-about .content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color: black;
+}
+
+/* home-about css ends here */
+
+
+/* home package css starts here */
+.home-package{
+    background: #eee;
+}
+
+.home-package .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.home-package .box-container .box{
+    border: .1rem solid black;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1) ;
+    background: rgb(255, 255, 255);
+}
+
+.home-package .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+}
+
+.home-package .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.home-package .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-package .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.home-package .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #777;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.home-package .load-more{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* home package css starts here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media(max-width:1200px){
+    section{
+        padding:3rem 5%;
+    }
+}
+
+@media(max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding:3rem 2rem;
+    }
+    .home .slide .content h3{
+        font-size: 10vw;
+    }
+}
+
+@media(max-width:768px){
+
+    .heading h1{
+        font-size: 4rem;
+    }
+    #menu-btn{
+        display: inline-block;
+        transition: .2s linear;
+    }
+    #menu-btn.fa-times{
+        transform: rotate(180degree);
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%; left:0; right:0;
+        background-color: white;
+        border-top: .1rem solid black;
+        padding: 2rem;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+
+@media(max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+    .heading-title{
+        font-size: 3.5rem;
+    }
+}

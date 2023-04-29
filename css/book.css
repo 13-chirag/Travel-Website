@@ -1,0 +1,45 @@
+.booking .book-form{
+    padding: 2rem;
+    background: #eee;
+}
+
+.booking .book-form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.booking .book-form .flex .inputBox{
+    flex: 1 1 41rem;
+}
+
+.booking .book-form .flex .inputBox input{
+    width: 100%; 
+    padding: 1.2rem 1.4rem;
+    font-size: 1.6rem;
+    color: #777;
+    text-transform: none;
+    margin-top: 1.5rem;
+    /* /* border: .1rem solid black; */
+}
+
+.booking .book-form .flex .inputBox input:focus{
+    background: black;
+    color: white;
+}
+
+.booking .book-form .flex .inputBox input:focus::placeholder{
+    color: #fff9;
+}
+
+.booking .book-form .flex .inputBox span{
+    font-size: 1.5rem;
+    color: #777;
+}
+
+.booking .book-form .btn{
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
